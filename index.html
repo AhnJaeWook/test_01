@@ -4,9 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>KMU x LIKELION</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            background-color: rgba( 255, 255, 255, 0.5 );
+            width: 80%;
+            padding-left: 10%;
+            padding-right: 10%;
+            height: 70px;
+        }
+        .nav div{
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+        }
+        .nav div a{
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-grow: 1;
+            text-decoration: none;
+            color: black;
+        }
+        .main{
+            background-image: url("main.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 1900px;
+        }
+
+        .program{
+            background-image: url("program_02.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 1000px;
+        }
+
+        .out_name_box{
+            display:flex;
+            justify-content: center;
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+        .name_box{
+            width: 80%;
+            height: 500px;
+            /* border: 1px solid black; */
+        }
+        .out_circle_box{
+            display:grid;
+            grid-template-columns:repeat(8.333334%,12);
+            grid-template-rows: 250px 250px;
+        }
+        .circle_box{
+            display:flex;
+            justify-content: center;
+            margin-top:5%;
+            width:150px;
+            height:150px;
+            border-radius: 100%;
+            /* box-shadow: grey 3px 3px 3px 3px; */
+            border: 2px solid black;
+        }
+        .under_box{
+            border:3px solid #aba196;
+            width:100%;
+            height:60px;
+            margin-top:160px;
+        }
+        .item1{
+            display:flex;
+            justify-content: center;
+            grid-column: 1/4;
+            border: 1px solid black;
+        }
+        .item2{
+            display:flex;
+            justify-content: center;
+            grid-column: 4/7;
+            border: 1px solid black;
+        }
+        .item3{
+            display:flex;
+            justify-content: center;
+            grid-column: 7/10;
+            border: 1px solid black;
+        }
+        .item4{
+            display:flex;
+            justify-content: center;
+            grid-column: 10/13;
+            border: 1px solid black;
+        }
+        .item5{
+            display:flex;
+            justify-content: center;
+            grid-column: 1/5;
+            border: 1px solid black;
+        }
+        .item6{
+            display:flex;
+            justify-content: center;
+            grid-column: 5/9;
+            border: 1px solid black;
+        }
+        .item7{
+            display:flex;
+            justify-content: center;
+            grid-column: 9/13;
+            border: 1px solid black;
+        }
+
+        .footer{
+            margin-top: 100px;
+            background-image: url("footer.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="nav">
+        <a>멋쟁이사자처럼 x 계명대학교</a>
+        <div>
+            <a href="#main">멋사소개</a>
+            <a href="#program">강의진행</a>
+            <a href="#schdule">일정</a>
+            <a href="#admin">운영진소개</a>
+        </div>
+    </div>
+    <div class="main" id="main">
+    </div>
+    <div class="program" id="program">
+    </div>
+    <div id="schdule" style="text-align: center; margin-top: 80px;">
+        <h1 style="color: orange; width: 30%;">Schdule</h1>
+        <img style="width: 80%;" src="schdule.png" />
+    </div>
+    <div id="admin" class="out_name_box">
+        <div class="name_box">
+            <h1 style="color: orange;">운영진 소개</h1>
+            <div class="out_circle_box">
+                <div class="item1">
+                    <div class="circle_box">
+                        <div class="under_box"></div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="circle_box">
+                        <div class="under_box"></div>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="circle_box">
+                        <div class="under_box"></div>
+                    </div>
+                </div>
+                <div class="item4">
+                    <div class="circle_box">
+                        <div class="under_box"></div>
+                    </div>
+                </div>
+                <div class="item5">
+                    <div class="circle_box">
+                        <div class="under_box"></div>
+                    </div>
+                </div>
+                <div class="item6">
+                    <div class="circle_box">
+                        <div class="under_box"></div>
+                    </div>
+                </div>
+                <div class="item7">
+                    <div class="circle_box">
+                        <div class="under_box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
 </body>
 </html>
