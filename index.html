@@ -38,11 +38,13 @@
             color: black;
         }
 
+        @font-face {
+            font-family: 'KoPubWorld_Dotum';
+            src: url(KOPUBWORLD_TTF_FONTS/KoPubWorld_Dotum_Medium.ttf) format('truetype')
+        }
         .out_name_box{
             display:flex;
             justify-content: center;
-            margin-top: 200px;
-            margin-bottom: 200px;
         }
         .name_box{
             width: 80%;
@@ -55,64 +57,90 @@
             grid-template-rows: 250px 250px;
         }
         .circle_box{
+            text-align: center;
             display:flex;
             justify-content: center;
             margin-top:5%;
-            width:150px;
-            height:150px;
-            border-radius: 100%;
-            background-image: url("footer.png");
-            background-size: contain;
+            width:auto;
+            height:60%;
+            border-radius: 100%; 
+            background-size:cover;
             /* box-shadow: grey 3px 3px 3px 3px; */
-            border: 2px solid black;
+            /* border: 2px solid black; */
+        }
+        .out_circle_box div:nth-child(1) .circle_box{
+            background-image: url("jaewook.jpg");
+        }
+        .out_circle_box div:nth-child(2) .circle_box{
+            background-image: url("suhwan1.jpg");
+        }
+        .out_circle_box div:nth-child(3) .circle_box{
+            background-image: url("blank.jpg");
+        }
+        .out_circle_box div:nth-child(4) .circle_box{
+            background-image: url("blank.jpg");
+        }
+        .out_circle_box div:nth-child(5) .circle_box{
+            background-image: url("uiyeon.jpg");
+        }
+        .out_circle_box div:nth-child(6) .circle_box{
+            background-image: url("blank.jpg");
+        }
+        .out_circle_box div:nth-child(7) .circle_box{
+            background-image: url("blank.jpg");
         }
         .under_box{
-            border:3px solid #aba196;
-            width:100%;
+            font-family:KoPubWorld_Dotum;
+            /* border:2px solid #aba196; */
+            width:auto;
             height:60px;
             margin-top:160px;
         }
         .item1{
             display:flex;
             justify-content: center;
-            grid-column: 1/4;
-            border: 1px solid black;
+            grid-column: 1/5;
+            /* border: 1px solid black; */
         }
         .item2{
             display:flex;
             justify-content: center;
-            grid-column: 4/7;
-            border: 1px solid black;
+            grid-column: 5/9;
+            /* border: 1px solid black; */
         }
         .item3{
             display:flex;
             justify-content: center;
-            grid-column: 7/10;
-            border: 1px solid black;
+            grid-column: 9/13;
+            /* bor
+            display:flex;
+            justify-content: center;
+            grid-column: 1/4;
+            /* border: 1px solid black; */
         }
         .item4{
             display:flex;
             justify-content: center;
-            grid-column: 10/13;
-            border: 1px solid black;
+            grid-column: 1/4;
+            /* border: 1px solid black; */
         }
         .item5{
             display:flex;
             justify-content: center;
-            grid-column: 1/5;
-            border: 1px solid black;
+            grid-column: 4/7;
+            /* border: 1px solid black; */
         }
         .item6{
             display:flex;
             justify-content: center;
-            grid-column: 5/9;
-            border: 1px solid black;
+            grid-column: 7/10;
+            /* border: 1px solid black; */
         }
         .item7{
             display:flex;
             justify-content: center;
-            grid-column: 9/13;
-            border: 1px solid black;
+            grid-column: 10/13;
+            /* border: 1px solid black; */
         }
 
     </style>
@@ -139,41 +167,40 @@
     </div>
     <div id="admin" class="out_name_box">
         <div class="name_box">
-            <h1 style="color: orange;">운영진 소개</h1>
             <div class="out_circle_box">
-                <div class="item1">
+                <div class="item1">        
                     <div class="circle_box">
-                        <div class="under_box"></div>
+                        <div class="under_box"> 8기 계대 멋사 운영진<br><b>안재욱</b></div>
                     </div>
                 </div>
                 <div class="item2">
                     <div class="circle_box">
-                        <div class="under_box"></div>
+                        <div class="under_box"> 8기 계대 멋사 운영진<br><b>김수환</b></div>
                     </div>
                 </div>
                 <div class="item3">
                     <div class="circle_box">
-                        <div class="under_box"></div>
+                        <div class="under_box"> 8기 계대 멋사 운영진<br><b>이병률</b></div>
                     </div>
                 </div>
                 <div class="item4">
                     <div class="circle_box">
-                        <div class="under_box"></div>
+                        <div class="under_box"> 8기 계대 멋사 운영진<br><b></b></div>
                     </div>
                 </div>
-                <div class="item5">
+                <div class="item5">            
                     <div class="circle_box">
-                        <div class="under_box"></div>
+                        <div class="under_box"> 8기 계대 멋사 운영진<br><b>임의연</b></div>
                     </div>
                 </div>
                 <div class="item6">
                     <div class="circle_box">
-                        <div class="under_box"></div>
+                        <div class="under_box"> 8기 계대 멋사 운영진<br><b></b></div>
                     </div>
                 </div>
                 <div class="item7">
                     <div class="circle_box">
-                        <div class="under_box"></div>
+                        <div class="under_box"> 8기 계대 멋사 운영진<br><b></b></div>
                     </div>
                 </div>
             </div>
